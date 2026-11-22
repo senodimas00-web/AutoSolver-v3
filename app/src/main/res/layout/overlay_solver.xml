@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="wrap_content" android:background="#E0111827" android:orientation="vertical" android:padding="6dp">
+    <View android:id="@+id/dragHandle" android:layout_width="match_parent" android:layout_height="22dp" android:background="#374151" />
+    <LinearLayout android:id="@+id/panelBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="4dp">
+        <TextView android:id="@+id/phaseText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="IDLE" android:textColor="#F59E0B" android:textSize="11sp" android:textStyle="bold" />
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:text="Siap." android:textColor="#93C5FD" android:textSize="12sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp">
+            <TextView android:id="@+id/solvedText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="✓ 0" android:textColor="#10B981" android:textSize="11sp" />
+            <TextView android:id="@+id/errorsText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="✗ 0" android:textColor="#EF4444" android:textSize="11sp" />
+        </LinearLayout>
+        <CheckBox android:id="@+id/chkAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AUTO MODE" android:textColor="#FFFFFF" />
+        <SeekBar android:id="@+id/seekAlpha" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="85" />
+        <Button android:id="@+id/btnStop" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="STOP" />
+    </LinearLayout>
+</LinearLayout>
