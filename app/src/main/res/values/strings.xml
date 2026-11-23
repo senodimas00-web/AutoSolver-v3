@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AI Robot Ujian</string>
+    <string name="a11y_desc">Membaca soal di layar dan mengklik jawaban yang benar secara otomatis.</string>
+</resources>
